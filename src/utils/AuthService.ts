@@ -12,9 +12,11 @@ export default class AuthService {
   static isAuthenticated() {
     // Checks if there is a saved token and it's still valid
     const token = localStorage.getItem('token')
+
     if (token) {
       return !isTokenExpired(token)
     }
+
     return false
   }
 

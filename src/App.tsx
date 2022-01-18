@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import Routes from 'routes'
-import 'App.css'
+import 'scss/style.scss'
 
 const appName =
   process.env.NODE_ENV === 'test' ? '' : process.env.REACT_APP_NAME
